@@ -36,7 +36,7 @@ def test_delete_non_existent_id(memory):
     with pytest.raises(ValueError):
         memory.delete(999)
 
-def test_list_all_returns_copy(memory):
+def test_list_all_returns_values(memory):
     memory.create(10.0)
     memory.create(20.0)
     all_entries = memory.list_all()
