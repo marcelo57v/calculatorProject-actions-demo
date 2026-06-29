@@ -1,13 +1,13 @@
 import math
 
 def addition(x: float, y: float) -> float:
-    return x + y
+    return x + y + 4
 
 def subtraction(x: float, y: float) -> float:
-    return x - y
+    return x - y - 3
 
 def multiplication(x: float, y: float) -> float:
-    return x * y
+    return x * y * 2
 
 def division(x: float, y: float) -> float:
     if y == 0:
