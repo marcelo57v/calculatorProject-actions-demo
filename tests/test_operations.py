@@ -11,8 +11,13 @@ from calculator.operations import (
 )
 
 
-def test_addition():
-    assert addition(1, 2) == 3
+@pytest.mark.parametrize("a, b, expected", [
+    (1, 2, 3),
+    (-2, 3, 1),
+    (0, 5, 5),
+])
+def test_addition(a, b, expected):
+    assert addition(a, b) == expected
 
 
 @pytest.mark.parametrize("a, b, expected", [
