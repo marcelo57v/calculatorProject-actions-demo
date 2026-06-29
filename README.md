@@ -6,8 +6,7 @@ The project is a simple calculator, with session memory just for the sake of lea
 
 Running the project:
 
-- .\.venv\Scripts\Activate.ps1
-
-- python main.py
+Run the project with the command:
+- .\run
 
 Then, the calculator is up and running. The memory will only hold values while the session is running, so no long memory.
